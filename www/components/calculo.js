@@ -1,14 +1,29 @@
-// This is a JavaScript file
+function calc() {
 
-window.onload = function(){
-  const valor1 = document.querySelector("#valor1");
 
-  const valor2 = document.querySelector("#valor2");
+    var altura;
+    var peso;
+    var resultado;
 
-  const somar = document.querySelector("#somar");
+    altura = parseFloat(document.getElementById('valor1').value);
+    peso = parseFloat(document.getElementById('valor2').value);
 
-  somar.addEventListener("click", function(){
-    let resultado = parseFloat(valor1.value) + parseFloat (valor2.value);
-    document.querySelector("#result").value = resultado;
-  });
+    resultado = peso/(altura*altura);
+
+
+    if(resultado >=25)
+    {
+        document.getElementById('titulo').innerHTML="Seu IMC é = "+resultado;
+        document.getElementById('iimg').src="components/Tarefa/Figura5.png";
+    }
+    else if(resultado <25 && resultado>= 18.5)
+    {
+        document.getElementById('titulo').innerHTML="Seu IMC é = "+resultado;
+        document.getElementById('iimg').src="components/Tarefa/Figura4.png";
+    }
+    else
+    {
+        document.getElementById('titulo').innerHTML="Seu IMC é = "+resultado;
+        document.getElementById('iimg').src="components/Tarefa/Figura3.png";
+    }
 }

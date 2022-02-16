@@ -18,14 +18,15 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class=""col-12">
-        <h1>Calculadora</h1>
-      </div>
+        <div id="titulo">
+            <h1>Calculadora IMC</h1>
+        </div>
+
     </div>
     <div class="row">
       <div class="col-12">
         <div class="form-group">
-          <label for="valor1">Valor 1:</label>
+          <label for="altutura">Altura:</label>
           <input type="number" class="form-control" id="valor1">
         </div>
       </div>
@@ -33,7 +34,7 @@
     <div class="row">
       <div class="col-12">
         <div class="form-group">
-          <label for="valor2">Valor 2:</label>
+          <label for="peso">Peso:</label>
           <input type="number" class="form-control" id="valor2">
         </div>
       </div>
@@ -41,18 +42,15 @@
     <div class="row">
       <div class="col-12">
         <div class="form-group">
-          <label for="result">Resultado:</label>
-          <input type="text" class="form-control" id="result" readonly>
+          <button class="btn btn-success btn-block" id="calcular" onclick="calc()">Calcular</button>
         </div>
       </div>
-    </div>
+    </div>  
     <div class="row">
       <div class="col-12">
-        <div class="form-group">
-          <button class="btn btn-primary btn-block" id="somar">Somar</button>
-        </div>
+          <img src="components/Tarefa/Tabela.png" width="350vw" height="350vh" id = "iimg">
       </div>
-    </div>    
+    </div>  
   </div>  
 </body>
 </html>
