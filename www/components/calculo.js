@@ -14,16 +14,19 @@ function calc() {
     if(resultado >=25)
     {
         document.getElementById('titulo').innerHTML="Seu IMC é = "+resultado.toFixed(2);
+        document.getElementById('titulo').style.color="red";
         document.getElementById('iimg').src="components/Tarefa/Figura5.png";
     }
     else if(resultado <25 && resultado>= 18.5)
     {
         document.getElementById('titulo').innerHTML="Seu IMC é = "+resultado.toFixed(2);
+        document.getElementById('titulo').style.color="green";
         document.getElementById('iimg').src="components/Tarefa/Figura4.png";
     }
     else
     {
         document.getElementById('titulo').innerHTML="Seu IMC é = "+resultado.toFixed(2);
+        document.getElementById('titulo').style.color="grey";
         document.getElementById('iimg').src="components/Tarefa/Figura3.png";
     }
 }
